@@ -19,6 +19,10 @@ pairs = [
         ["I'm doing well my friend!\nHow are you?", ]
     ],
     [
+        r"I am (.*)",
+        ["I see, is there anything I may assist you with"]
+    ],
+    [
         r"sorry (.*)|sorry|(.*) sorry|(.*) sorry (.*)",
         ["It is already forgiven.", "You needn't worry at all", ]
     ],
@@ -128,10 +132,15 @@ pairs = [
     ],
     [
         r"i love you (.*)|love you|(.*) love you|(.*) love you (.*)",
-        ["That is sweet sir, but I only think of you as a an aquaintence"]
+        ["That is sweet sir, but I only think of you as an aquaintence"]
     ],
     [
         r"will you marry me|marry|(.*) marry|marry (.*)|(.*) marry (.*)",
         ["No"]
+    ],
+    [
+        r"do you translate?| do you know other languages?",
+        ["I do, just ask me and surround the \nphrase you want translated in \"\", like this:\n what does \"bonjour\" mean"]
     ]
+    
 ]

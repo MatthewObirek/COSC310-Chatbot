@@ -9,11 +9,23 @@ As we promised in the A2 version, "Future revisions and additions could improve 
 
 You can find a list of the features and improvements in A3 [here](#a3-features-and-improvements).
 
+For the Individual Assignment I added the ***Google Translate*** API and the ***Wikipedia*** API. The google translate API is set up to translate other languages into English, or, if specified, another language. Just start by asking `do you translate?`. Botler will give you directions.
+Using phrases like: `what does this mean: "Nacht der untoten"`, or `please translate "how are you" into french` is a great place to start. 
+
+
 The MIT liscence is in this same direcory and is named <a href="https://github.com/Software-Engineering-Group-4-Maamy/chat-bot/blob/main/LICENSE" target="_blank">LICENSE</a>.
 
+## API's in use
+The <a href="https://www.nltk.org/" target="_blank">***NLTK***</a> API
+The ***ChatApplication*** API
+The ***autocorrect*** API
+The ***Google Translate*** API
+The ***Wikipedia*** API
 ## Instalation guide
 1. First, install <a href="https://pip.pypa.io/en/stable/installation/">pip</a> if you have not already
 2. Run `pip install --user -U nltk`
+2.5 run `pip install googletrans==3.1.0a0`
+2.55 run `pip install wikipediaapi`
 3. Then, clone this git reposotory, or download the zip file. 
 4. Inside the python directory, run the main.py file `python main.py`
 5. Vouala - you now own a human soul.

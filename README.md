@@ -30,8 +30,8 @@ The <a href="https://pypi.org/project/Wikipedia-API/" target="_blank">***Wikiped
 ## Instalation guide
 1. First, install <a href="https://pip.pypa.io/en/stable/installation/">pip</a> if you have not already
 2. Run `pip install --user -U nltk googletrans==3.1.0a0 wikipedia-api pandas autocorrect tk-tools chatapp lxml`
-3. Then, clone this git reposotory, or download the zip file. 
-4. Inside the python directory, run the initlibs.py file `python python/initlibs.py` or `python initlibs.py`  
+3. Then, clone this git reposotory, or download the zip file and move to the python directory. 
+4. Inside the python directory, run the initlibs.py file `python initlibs.py`  
 5. Then run the main.py file `python main.py`
 6. Vouala - you now own a human soul.
 

@@ -9,26 +9,31 @@ As we promised in the A2 version, "Future revisions and additions could improve 
 
 You can find a list of the features and improvements in A3 [here](#a3-features-and-improvements).
 
-For the Individual Assignment, I added the ***Google Translate*** API and the ***Wikipedia*** API. The google translate API is set up to translate other languages into English, or, if specified, another language. Just start by asking `do you translate?`. Botler will give you directions.
+### API's used in Individual Asssignment
+
+For the Individual Assignment, I added the <a href="https://pypi.org/project/googletrans/" target="_blank">***Google Translate***</a> API and the <a href="https://pypi.org/project/Wikipedia-API/" target="_blank">***Wikipedia***</a> API. The <a href="https://pypi.org/project/googletrans/" target="_blank">***Google Translate***</a> API is set up to translate other languages into English, or, if specified, another language. Just start by asking `do you translate?`. Botler will give you directions.
 Examples of texr: `what does this mean: "Nacht der untoten"`, or `please translate "how are you" into french`. 
-The Wikipedia API is set up to give a little bit of information on a lot of topics. Using the page.summary function, Botler is able to provide a little bit of info for the reader. Just start by saying `tell me something interesing` and Botler will lead the way.
+The <a href="https://pypi.org/project/Wikipedia-API/" target="_blank">***Wikipedia***</a> API is set up to give a little bit of information on a lot of topics. Using the page.summary function, Botler is able to provide a little bit of info for the reader. Just start by saying `tell me something interesing` and Botler will lead the way.
+
+You can find the complete list of features and improvements done in the Individual Assignment [here](#ia-features-and-improvements).
 
 The MIT liscence is in this same direcory and is named <a href="https://github.com/Software-Engineering-Group-4-Maamy/chat-bot/blob/main/LICENSE" target="_blank">LICENSE</a>.
 
 ## API's in use
-The <a href="https://www.nltk.org/" target="_blank">***NLTK***</a> API
-The ***ChatApplication*** API
-The ***autocorrect*** API
-The ***Google Translate*** API
-The ***pandas*** API
-The ***Wikipedia*** API
+The <a href="https://www.nltk.org/" target="_blank">***NLTK***</a> API - `pip install --user -U nltk`<br>
+The <a href="https://pypi.org/project/ChatApp/" target="_blank">***ChatApplication***</a> API - `pip install chatapp` <br> 
+The <a href="https://pypi.org/project/autocorrect/" target="_blank">***Autocorrect***</a> API - `pip install autocorrect`<br>
+The <a href="https://pypi.org/project/googletrans/" target="_blank">***Google Translate***</a> API - `pip install googletrans==3.1.0a0`<br>
+The <a href="https://pypi.org/project/pandas/" target="_blank">***Pandas***</a> API - `pip install pandas`<br>
+The <a href="https://pypi.org/project/Wikipedia-API/" target="_blank">***Wikipedia***</a> API - `pip install wikipedia-api`<br>
 
 ## Instalation guide
 1. First, install <a href="https://pip.pypa.io/en/stable/installation/">pip</a> if you have not already
 2. Run `pip install --user -U nltk googletrans==3.1.0a0 wikipedia-api pandas autocorrect tk-tools chatapp lxml`
 3. Then, clone this git reposotory, or download the zip file. 
-4. Inside the python directory, run the initlibs.py file `python python/initlibs.py` main.py file `python main.py`
-5. Vouala - you now own a human soul.
+4. Inside the python directory, run the initlibs.py file `python python/initlibs.py` or `python initlibs.py`  
+5. Then run the main.py file `python main.py`
+6. Vouala - you now own a human soul.
 
 ## Sample output
 
@@ -131,7 +136,47 @@ More details about unit testing can be found [here](#unit-testing).
 	4) Continuous Chat: Botlers ability to handle long drawn out conversations can be utilized to handle email conversations you just really don’t want to have.
 	5) Unique Dialogue Library: Botler can handle all your automated messages through use of its language library. This could be implanted as an API so that an email gets forwarded to it and the library would allow Botler to select the correct, and polite, reply. 
 
+## IA: Features and Improvements
+#### Part 1 - Translation
+1. Language detection: botler can detect what language a phrase is written in, and tell the user that language.	
+		
+		U: what language is "nacht der untoten"
+		Botler: That language is German, sir
 
+2. Language translation to English: botler can translate phrases that are in other languages to English
+	
+		U: what does 'nacht der untoten' mean
+		Botler: the phrase you gave me means 'Night of the Living Dead'
+		
+3. Language translation from English: botler can translate phrases to and from english, or any language.
+
+		U: please translate 'I love you' into french
+		Botler: the translated phrase is: 
+		'Je vous aime'
+
+4. Unknown language handling: aslong as that language is known.
+
+		U: please translate 'I love you' into greyman
+		Botler: I am sorry sir, that language eludes my knowledge
+
+#### Part 2 - Wikipedia
+1. Interesting topics: botler will suggest interesting topics based on the <a href="https://en.wikipedia.org/wiki/Wikipedia:Top_25_Report">Wikipedia:Top 25 Report</a> page
+
+		You: tell me something interesting
+		Botler: Choose a topic, Sir: 
+		Jada Pinkett Smith, Will Smith, RRR (film), Chris Rock, 94th Academy Awards
+		and Sir, make sure to surround the topic with '_'
+		
+2. Summarise topic: botler will provide a summary of a topic you are interested in
+
+		You: tell me about "Will Smith"
+		Botler: Willard Carroll  Smith II (born September 25, 1968), also known by his stage name the Fresh Prince[...]
+		If you would like related topics, Sir, write "what topics are related to 'will smith'"
+		
+3. Related Topics: botler will give 5 related topics when the User gives a topic
+
+		You: what topics are related to 'Awards'
+		Botler: 'Badge of honour', 'Awards ceremony', 'EURYI', 'Internet Buzzword Award', 'Jagranjosh Education Award
 ## Class Organization
 
 1. ***Botler:***

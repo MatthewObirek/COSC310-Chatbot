@@ -25,9 +25,9 @@ The ***Wikipedia*** API
 
 ## Instalation guide
 1. First, install <a href="https://pip.pypa.io/en/stable/installation/">pip</a> if you have not already
-2. Run `pip install --user -U nltk panda googletrans==3.1.0a0 wikipedia-api`
+2. Run `pip install --user -U nltk googletrans==3.1.0a0 wikipedia-api pandas autocorrect tk-tools chatapp lxml`
 3. Then, clone this git reposotory, or download the zip file. 
-4. Inside the python directory, run the main.py file `python main.py`
+4. Inside the python directory, run the initlibs.py file `python python/initlibs.py` main.py file `python main.py`
 5. Vouala - you now own a human soul.
 
 ## Sample output

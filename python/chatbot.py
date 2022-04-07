@@ -72,7 +72,8 @@ def Check_Translation_Querry(msg):
         return textTrans
     elif msg == 'what does it mean' and textTrans is None:
         return "I am not sure what 'it' you refer to. Sir, please ask again"
-
+    if len(cutmsg) < 4:
+        return None
     #Check what language is 'nacht der untoten' written in
     elif msg[0:17] == 'what language is ':
         result = translator.translate(cutmsg[3])

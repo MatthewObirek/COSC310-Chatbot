@@ -1,6 +1,8 @@
 # M.A.A.M.Y's Chat Bot
 Software Engineering Term 2, 2022
 
+# Github Page - <a href="https://github.com/MatthewObirek/COSC310-Chatbot">HERE</a>
+
 Our group has decide to create a chatbot using python. We have used the <a href="https://www.nltk.org/" target="_blank">***NLTK***</a> python Library in order to create our chatbot. The bot will be taking the role of a sassy, well educated, butler with a good scence of humour, meanwhile the user will take the role of its master.
 
 In A3 we have made significant in terms of user experience with new GUI and also technical improvements in the conversation flow with help of sentiment analysis and autocorrect for spelling mistakes, which was not possible in our previous A2 version of the bot.
